@@ -1,12 +1,15 @@
+import { useState } from "react";
 import Navbar from "../header/Navbar";
 import AboutCard from "./AboutCard";
 import ThaliCards from "./ThaliCards";
 
 const MainHomepg = () => {
+    const[userData,setUserData] = useState("");
+    setUserData("chandan")
     return (
         <>
             <div className="topHalf">
-                <Navbar />
+                <Navbar userData={userData}/>
                 <div className="container" style={{ textAlign: "end", color: "#d66f10", fontFamily: "satisfy" }}>
                     <h3 style={{ letterSpacing: "5px" }}>"Effortless Meal Management" By MessConnect</h3>
                 </div>

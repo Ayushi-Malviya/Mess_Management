@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-const Navbar = () => {
+const Navbar = ({userData}) => {
     return (<>
 
         <div className="navbar d-flex text-secondary">
@@ -9,8 +9,6 @@ const Navbar = () => {
             </div>
 
             <div className="nav_bar  d-flex p-3 p-sm-1 col-lg-8 col-md-8  col-8" >
-
-
 
                 <div className="justify-content-end align-items-end" style={{ right: "0" }} >
                     <Button classname="btn btn-md me-2 text-secondary" btnText="LOGIN" />
